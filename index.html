@@ -3,198 +3,212 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TRẠNG NẬM EDUCATION — Học viện Toán · Văn · Anh</title>
-<meta name="description" content="TRẠNG NẬM EDUCATION — website parody giáo dục tổng hợp, cực nghiêm túc và cực đáng ngờ.">
+<title>TRẠNG NẬM // ACADEMY ULTRA</title>
+<meta name="description" content="TRẠNG NẬM Academy Ultra — website parody giáo dục.">
 <style>
-:root{--bg:#f5f7fb;--card:#fff;--ink:#111827;--muted:#667085;--line:#e4e7ec;--blue:#2563eb;--red:#e11d48;--gold:#f59e0b;--green:#16a34a;--dark:#0b1220;--purple:#7c3aed;--shadow:0 18px 60px rgba(16,24,40,.10);--r:25px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}
-.top{background:#0b1220;color:#fff;text-align:center;padding:9px 15px;font-size:12px;font-weight:950;letter-spacing:.05em}.top b{color:#fbbf24}
-nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.91);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:70px;max-width:1260px;margin:auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font-weight:1000;font-size:18px;letter-spacing:-.04em}.logo span{color:var(--blue)}.links{display:flex;gap:15px;font-size:12px;font-weight:900}.links a:hover{color:var(--blue)}
-.btn{border:0;border-radius:14px;padding:12px 17px;font-weight:950;cursor:pointer}.primary{background:var(--blue);color:#fff}.dark{background:#111827;color:#fff}.outline{background:#fff;border:1px solid var(--line)}
-.wrap{max-width:1260px;margin:auto;padding:0 22px}.hero{padding:82px 0 55px;background:radial-gradient(circle at 78% 18%,#dbeafe 0,transparent 35%),linear-gradient(135deg,#fff,#f2f6ff 58%,#fff4f7)}.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:1000;color:var(--blue)}
-h1{font-size:clamp(48px,7vw,92px);line-height:.9;letter-spacing:-.075em;margin:15px 0 23px}.hero h1 span{color:var(--blue)}.lead{font-size:18px;color:var(--muted);max-width:700px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0}.heroVisual{position:relative;background:#111827;padding:12px;border-radius:34px;box-shadow:var(--shadow);transform:rotate(1deg)}.heroVisual img{width:100%;height:500px;object-fit:cover;border-radius:25px;display:block}.badge{position:absolute;background:#fff;border-radius:18px;padding:13px 16px;box-shadow:var(--shadow);font-weight:1000}.b1{left:-28px;top:25px}.b2{right:-25px;bottom:25px}.badge small{display:block;color:var(--muted);font-weight:750}
-.section{padding:78px 0}.head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:30px}.head h2{font-size:clamp(38px,5vw,60px);line-height:.95;letter-spacing:-.06em;margin:7px 0}.muted{color:var(--muted)}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;box-shadow:0 7px 28px rgba(16,24,40,.04)}.card h3{margin:8px 0;font-size:23px;letter-spacing:-.035em}.icon{font-size:34px}.pill{display:inline-block;background:#eef2ff;padding:5px 9px;border-radius:999px;font-size:11px;font-weight:950;margin:2px}.tiny{font-size:12px}
-.stats{display:grid;grid-template-columns:repeat(5,1fr);background:#0b1220;color:#fff;border-radius:30px;overflow:hidden}.stat{padding:25px;border-right:1px solid #263244}.stat:last-child{border:0}.stat b{font-size:38px;display:block}.stat span{color:#a8b1c2;font-size:12px}
-.subject{min-height:245px;position:relative;overflow:hidden}.subject .num{position:absolute;right:16px;top:4px;font-size:58px;font-weight:1000;color:#e9eefb}.subject p{color:var(--muted)}
-.teachers{display:grid;grid-template-columns:1fr 1fr;gap:18px}.teacher{padding:0;overflow:hidden;background:#101828;color:#fff}.teacher img{width:100%;height:410px;object-fit:cover;display:block}.teacher .body{padding:25px}.teacher .muted{color:#cbd5e1}
-.courses{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.course{display:grid;grid-template-columns:62px 1fr auto;align-items:center;gap:14px}.courseIcon{width:58px;height:58px;border-radius:17px;background:#eef4ff;display:grid;place-items:center;font-size:25px}.course h3{font-size:18px;margin:0}.course p{font-size:13px;margin:4px 0;color:var(--muted)}
-.feature{display:grid;grid-template-columns:1fr 1fr;gap:20px}.feature .darkbox{background:#0b1220;color:#fff;border-radius:30px;padding:34px}.darkbox .muted{color:#a8b1c2}
-.rankWrap{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.table{width:100%;border-collapse:collapse}.table th,.table td{text-align:left;padding:12px 9px;border-bottom:1px solid var(--line);font-size:13px}.rank1{color:#b7791f;font-weight:1000}.rank2{color:#667085;font-weight:1000}.rank3{color:#9a6b4a;font-weight:1000}
-.filter{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:15px}.filter button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-weight:850;cursor:pointer}.filter button.active{background:#111827;color:#fff}
-.studentGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.student{position:relative}.medal{font-size:30px}.student .score{font-size:33px;font-weight:1000}.student .bar{height:7px;background:#edf0f5;border-radius:99px;overflow:hidden;margin-top:8px}.student .bar i{display:block;height:100%;background:var(--blue)}
-.news{display:grid;grid-template-columns:1fr 1fr;gap:15px}.newsItem{display:grid;grid-template-columns:80px 1fr;gap:14px;align-items:start}.newsIcon{height:80px;border-radius:18px;background:#eef2ff;display:grid;place-items:center;font-size:30px}
-.memes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.memes img{width:100%;height:240px;object-fit:cover;border-radius:18px;border:1px solid var(--line);background:#ddd}
-.formGrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px}.form{background:#fff;border:1px solid var(--line);border-radius:30px;padding:30px}label{display:block;font-size:13px;font-weight:900;margin:0 0 13px}input,select,textarea{width:100%;padding:13px;border:1px solid #d0d5dd;border-radius:13px;background:#fff;font:inherit;margin-top:7px}textarea{min-height:100px}
-.quizTop{display:flex;justify-content:space-between;align-items:center;gap:15px}.progress{height:9px;background:#263244;border-radius:99px;overflow:hidden}.progress i{display:block;height:100%;background:#60a5fa;width:0}.qbox{background:#111827;color:#fff;border-radius:30px;padding:32px;margin-top:17px}.qtext{font-size:25px;font-weight:950;margin:12px 0 20px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ans{border:1px solid #344054;background:#172033;color:#fff;text-align:left;border-radius:15px;padding:15px;font-weight:850;cursor:pointer}.ans:hover{border-color:#60a5fa}.ans.correct{background:#14532d}.ans.wrong{background:#7f1d1d}
-.result{display:none;background:#fff;border:1px solid var(--line);border-radius:25px;padding:28px;margin-top:15px}.result.show{display:block}.scoreBig{font-size:64px;font-weight:1000;line-height:1}
-.timeline{position:relative;display:grid;gap:12px}.time{display:grid;grid-template-columns:90px 1fr;gap:14px}.time b{color:var(--blue)}
-.feed{display:grid;gap:9px}.feedItem{display:flex;gap:12px;padding:14px;background:#fff;border:1px solid var(--line);border-radius:16px}.dot{width:10px;height:10px;background:var(--green);border-radius:50%;margin-top:7px;flex:none}
-.manager{display:grid;grid-template-columns:220px 1fr;gap:25px;align-items:center}.avatar{width:185px;height:185px;border-radius:50%;background:#111827;color:#fff;display:grid;place-items:center;font-size:50px;font-weight:1000;border:8px solid #e7efff}
-.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:9px 0}.faq summary{font-weight:950;cursor:pointer}
-footer{background:#0b1220;color:#fff;padding:55px 0}.foot{display:flex;justify-content:space-between;gap:30px}.foot .muted{color:#a8b1c2}.small{font-size:12px;color:#98a2b3}
-.toast{position:fixed;right:18px;bottom:18px;background:#111827;color:#fff;padding:15px 18px;border-radius:15px;display:none;z-index:200;font-weight:900}.toast.show{display:block}
-@media(max-width:900px){.links{display:none}.heroGrid,.teachers,.feature,.rankWrap,.formGrid{grid-template-columns:1fr}.grid3,.grid4,.studentGrid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2n){border-right:0}.news{grid-template-columns:1fr}.heroVisual img{height:380px}}
-@media(max-width:560px){.grid3,.grid4,.studentGrid,.courses,.answers,.memes{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid #263244}.head{display:block}.time{grid-template-columns:70px 1fr}}
+:root{--bg:#070a10;--p:#0d1320;--p2:#111a2a;--line:#26334a;--txt:#f6f8fc;--mut:#98a5b8;--cyan:#5de2ff;--pink:#ff67a8;--gold:#ffd166;--red:#ff6475;--green:#5ce1a3;--r:24px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 8% 0,#182c4a 0,transparent 27%),radial-gradient(circle at 90% 10%,#32162e 0,transparent 25%),var(--bg);color:var(--txt);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}button{font:inherit}
+.top{background:#02040a;border-bottom:1px solid var(--line);text-align:center;padding:8px;font-size:10px;font-weight:950;letter-spacing:.08em}.top b{color:var(--pink)}
+.nav{position:sticky;top:0;z-index:100;background:#070a10dd;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navin{max-width:1400px;margin:auto;padding:14px 22px;display:flex;justify-content:space-between;align-items:center;gap:18px}.logo{font-weight:1000;letter-spacing:-.05em}.logo span{color:var(--cyan)}.navlinks{display:flex;gap:14px;font-size:10px;font-weight:950;color:#b8c3d4}.navlinks a:hover{color:#fff}.btn{border:1px solid var(--line);background:var(--p);color:#fff;padding:11px 15px;border-radius:13px;font-weight:950;cursor:pointer}.btn.primary{background:#fff;color:#070a10}.btn.cyan{background:var(--cyan);color:#061018;border-color:var(--cyan)}.btn.red{background:#34121a;border-color:#672430;color:#ff9aa6}
+.wrap{max-width:1400px;margin:auto;padding:0 22px}section{padding:95px 0}.hero{min-height:800px;display:grid;align-items:center}.heroGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:60px;align-items:center}.eyebrow{font-size:10px;letter-spacing:.17em;font-weight:1000;color:var(--cyan)}h1{font-size:clamp(60px,9vw,140px);line-height:.82;letter-spacing:-.1em;margin:16px 0 27px}.grad{background:linear-gradient(90deg,var(--cyan),#fff,var(--pink));color:transparent;background-clip:text}.lead{font-size:18px;color:var(--mut);max-width:760px}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:27px}.heroVisual{position:relative;background:linear-gradient(145deg,#131d30,#0b0f18);padding:11px;border:1px solid var(--line);border-radius:35px;box-shadow:0 40px 110px #0009}.heroVisual img{width:100%;height:560px;object-fit:cover;border-radius:27px}.float{position:absolute;background:#0b1220;border:1px solid var(--line);padding:13px 16px;border-radius:17px;font-weight:950;box-shadow:0 15px 40px #0008}.float small{display:block;color:var(--mut);font-size:9px}.fl1{top:30px;right:-25px}.fl2{bottom:35px;left:-30px}
+.head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}.head h2{font-size:clamp(42px,6vw,82px);line-height:.88;letter-spacing:-.08em;margin:8px 0}.muted{color:var(--mut)}.tiny{font-size:11px}.stats{display:grid;grid-template-columns:repeat(6,1fr);background:#0d1420;border:1px solid var(--line);border-radius:25px;overflow:hidden}.stat{padding:22px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat b{font-size:38px;display:block}.stat span{font-size:10px;color:var(--mut)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:linear-gradient(145deg,#101827,#0c121d);border:1px solid var(--line);border-radius:var(--r);padding:23px}.card:hover{border-color:#40516f}.icon{font-size:34px}.card h3{margin:9px 0;font-size:21px}.tag{display:inline-block;padding:4px 9px;border:1px solid var(--line);border-radius:99px;font-size:9px;font-weight:950;margin:2px;color:#c7d1df}
+.subject{min-height:310px;position:relative;overflow:hidden}.subject .num{position:absolute;right:15px;top:10px;font-size:82px;font-weight:1000;color:#1c2a42}.subject p{color:var(--mut)}
+.teacherGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.teacher{padding:0;overflow:hidden}.teacher img{width:100%;height:430px;object-fit:cover}.teacherbody{padding:23px}
+.courses{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.course{display:grid;grid-template-columns:58px 1fr auto;gap:14px;align-items:center}.courseicon{width:58px;height:58px;border-radius:16px;background:#17243a;display:grid;place-items:center;font-size:25px}
+.quiz{background:#0a101a;border:1px solid var(--line);border-radius:30px;padding:30px}.qtop{display:flex;justify-content:space-between}.progress{height:9px;background:#1b2638;border-radius:99px;overflow:hidden;margin:12px 0 25px}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--pink))}.q{font-size:27px;font-weight:950;margin:14px 0 22px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ans{border:1px solid #2a3850;background:#111a29;color:#fff;text-align:left;padding:15px;border-radius:14px;font-weight:850;cursor:pointer}.ans:hover{border-color:var(--cyan)}.ans.correct{background:#103a29;border-color:#2eaa73}.ans.wrong{background:#401821;border-color:#a13c4b}.ex{min-height:25px;color:var(--mut)}.result{display:none;margin-top:18px;background:#111a28;border-radius:20px;padding:20px}.result.show{display:block}.big{font-size:75px;font-weight:1000;letter-spacing:-.07em}
+.table{width:100%;border-collapse:collapse;background:#0e1521;border:1px solid var(--line);overflow:hidden;border-radius:20px}.table th,.table td{padding:13px;border-bottom:1px solid var(--line);font-size:11px;text-align:left}.table th{color:#8e9caf;background:#111a29}.gold{color:var(--gold);font-weight:1000}
+.profiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.profile{cursor:pointer}.avatar{width:68px;height:68px;border-radius:19px;background:linear-gradient(135deg,#273d69,#6f254d);display:grid;place-items:center;font-weight:1000;font-size:23px;margin-bottom:12px}.score{font-size:35px;font-weight:1000}
+.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.badge{text-align:center;padding:18px;background:#101827;border:1px solid var(--line);border-radius:20px}.badge .em{font-size:40px}.badge.lock{opacity:.35}
+.wanted{background:#160e13;border:2px dashed #842a39;border-radius:30px;padding:28px}.wanted h2{font-size:55px;line-height:.9;color:#ff7888;margin:0}.wantedGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.wantedItem{padding:17px;background:#0e141f;border:1px solid #522530;border-radius:18px}.wantedRow{display:grid;grid-template-columns:60px 1fr auto;gap:13px;align-items:center}.mug{width:60px;height:60px;border-radius:16px;background:#2b1720;display:grid;place-items:center;font-size:28px}.wantedItem strong{color:#ff929f}
+.activity{display:grid;gap:10px}.event{display:grid;grid-template-columns:80px 1fr;gap:15px;padding:16px;background:#0f1724;border-left:3px solid var(--cyan);border-radius:0 15px 15px 0}
+.panel{background:#0d1420;border:1px solid var(--line);border-radius:25px;padding:24px}.view{display:none}.view.active{display:block}.viewbar{border-bottom:1px solid var(--line);padding:15px 0}.back{color:var(--cyan);font-weight:950;cursor:pointer}
+.profilePage{display:grid;grid-template-columns:300px 1fr;gap:15px}.profileHero{background:linear-gradient(145deg,#121d31,#0b111b);border:1px solid var(--line);border-radius:28px;padding:28px}.profileHero .avatar{width:130px;height:130px;font-size:43px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.metric{background:#101827;border:1px solid var(--line);border-radius:17px;padding:17px}.metric b{font-size:28px;display:block}
+.lesson{display:grid;grid-template-columns:45px 1fr;gap:13px;padding:14px 0;border-bottom:1px solid var(--line)}.lessonNo{width:45px;height:45px;background:#17263e;border-radius:13px;display:grid;place-items:center;font-weight:1000}
+footer{border-top:1px solid var(--line);padding:60px 0;background:#04060b}.foot{display:flex;justify-content:space-between;gap:20px}
+.toast{position:fixed;right:18px;bottom:18px;background:#fff;color:#05070b;padding:14px 18px;border-radius:14px;font-weight:950;display:none;z-index:999}.toast.show{display:block}
+@media(max-width:950px){.heroGrid,.teacherGrid,.profilePage{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,1fr)}.grid3,.grid4,.profiles,.badges{grid-template-columns:1fr 1fr}.courses{grid-template-columns:1fr}}
+@media(max-width:600px){.navlinks{display:none}.stats,.grid3,.grid4,.profiles,.badges,.answers,.wantedGrid,.metrics{grid-template-columns:1fr}.head{display:block}.hero{min-height:auto;padding:70px 0}.heroVisual img{height:380px}.float{display:none}}
 </style>
 </head>
 <body>
-<div class="top">⚠️ <b>PARODY / FAN-MADE</b> · Không phải trung tâm giáo dục có thật · Mọi số liệu học thuật trên bản này đều là minh họa</div>
-<nav><div class="nav"><a class="logo" href="#home">TRẠNG NẬM <span>EDUCATION</span></a><div class="links"><a href="#subjects">Môn học</a><a href="#teachers">Giáo viên</a><a href="#courses">Khóa học</a><a href="#test">Đầu vào</a><a href="#ranking">BXH</a><a href="#students">Tiêu biểu</a><a href="#news">Tin tức</a><a href="#register">Đăng ký</a></div><a class="btn primary" href="#test">Thi ngay</a></div></nav>
+<div class="top">⚠️ <b>PARODY / FAN-MADE</b> · TRẠNG NẬM ACADEMY ULTRA · Dữ liệu học sinh & giáo viên dưới đây là dữ liệu mô phỏng để giải trí</div>
+<nav class="nav"><div class="navin"><a class="logo" href="#home">TRẠNG NẬM <span>// ULTRA</span></a><div class="navlinks"><a href="#school">HỌC VIỆN</a><a href="#subjects">MÔN</a><a href="#teachers">GV</a><a href="#quiz">THI</a><a href="#rank">BXH</a><a href="#profiles">HỒ SƠ</a><a href="#badges">HUY HIỆU</a><a href="#wanted">TRUY NÃ</a></div><a class="btn primary" href="#quiz">START</a></div></nav>
 
+<main id="main">
 <section class="hero" id="home"><div class="wrap heroGrid"><div>
-<div class="eyebrow">TRẠNG NẬM EDUCATION · EST. 2026 · KHÔNG AI BIẾT TẠI SAO</div>
-<h1>Học hành.<br><span>Nhưng phải vui.</span></h1>
-<p class="lead">Một học viện tổng hợp Toán · Ngữ Văn · Tiếng Anh được xây dựng với tinh thần: giao diện phải sang, nội dung phải chất, và thỉnh thoảng phải khiến người xem tự hỏi “Ủa cái này có thật không?”</p>
-<div class="actions"><a class="btn primary" href="#test">🧠 Kiểm tra đầu vào</a><a class="btn outline" href="#ranking">🏆 Xem BXH</a><a class="btn dark" href="#students">⭐ Học sinh tiêu biểu</a></div>
-<p class="small">👀 Mẹo: kéo xuống càng sâu, độ nghiêm túc càng giảm.</p>
+<div class="eyebrow">BOOT SEQUENCE // ULTRA EDITION // STATUS: ABSURDLY OVERENGINEERED</div>
+<h1>TRƯỜNG HỌC<br><span class="grad">NHƯ GAME.</span></h1>
+<p class="lead">Chào mừng tới TRẠNG NẬM ACADEMY ULTRA — phiên bản đại phẫu toàn diện: khoa riêng cho từng môn, hồ sơ học sinh, bảng điểm, BXH, hệ thống huy hiệu, activity feed, terminal quản trị và khu vực “truy nã BTVN”.</p>
+<div class="actions"><a class="btn cyan" href="#school">ENTER ULTRA →</a><a class="btn" href="#quiz">🧠 THI 30 CÂU</a><a class="btn red" href="#wanted">🚨 BTVN POLICE</a></div>
+<p class="tiny muted">Tư duy thiết kế: giao diện startup + RPG + LMS + nhóm chat lớp lúc 23:59.</p>
 </div>
-<div class="heroVisual"><img src="goat01.jpg" alt="Ảnh giáo viên parody"><div class="badge b1">🏫 3 BỘ MÔN<small>Toán · Văn · Anh</small></div><div class="badge b2">💯 TỈ LỆ TỰ TIN<small>99.9% trước khi xem đề</small></div></div>
+<div class="heroVisual"><img src="goat01.jpg" alt="Ảnh giáo viên parody"><div class="float fl1">SYSTEM ONLINE<small>3 khoa · 30 câu · 36 huy hiệu</small></div><div class="float fl2">BTVN POLICE<small>01 hồ sơ nổi bật: MIM Trịnh</small></div></div>
 </div></section>
 
-<section class="section"><div class="wrap"><div class="stats"><div class="stat"><b>03</b><span>bộ môn chính</span></div><div class="stat"><b>18+</b><span>khóa học minh họa</span></div><div class="stat"><b>15</b><span>câu kiểm tra đầu vào</span></div><div class="stat"><b>20</b><span>ứng viên trong BXH mẫu</span></div><div class="stat"><b>∞</b><span>năng lượng meme</span></div></div></div></section>
+<section id="school"><div class="wrap"><div class="head"><div><div class="eyebrow">01 // ACADEMY OS</div><h2>Không phải<br>website thường.</h2></div><p class="muted" style="max-width:460px">Mọi phần đều có mục đích: học, thi, xem thành tích, khám phá hồ sơ và cười.</p></div>
+<div class="stats"><div class="stat"><b>03</b><span>Khoa đào tạo</span></div><div class="stat"><b>30</b><span>Câu thi thử hard mode</span></div><div class="stat"><b>36</b><span>Huy hiệu</span></div><div class="stat"><b>09</b><span>Tên BXH</span></div><div class="stat"><b>03</b><span>Hồ sơ mẫu</span></div><div class="stat"><b>01</b><span>Ca BTVN nổi bật</span></div></div></div></section>
 
-<section class="section" id="about"><div class="wrap"><div class="head"><div><div class="eyebrow">01 / Tuyên ngôn</div><h2>Trông như học viện.<br>Hoạt động như meme.</h2></div><p class="muted" style="max-width:400px">Đây là website parody. Chúng ta giả vờ nghiêm túc đến mức có cả triết lý giáo dục, hội đồng quản trị và quy trình khảo thí.</p></div>
-<div class="grid3"><article class="card"><div class="icon">🎯</div><h3>Học đúng trọng tâm</h3><p class="muted">Toán, Văn, Anh. Không mở thêm Vật lý chỉ vì một bạn bình luận “thiếu”.</p></article>
-<article class="card"><div class="icon">🧠</div><h3>Thi đầu vào tử tế</h3><p class="muted">15 câu, 3 môn, có chấm điểm, xếp loại và màn hình kết quả. Không có chuyện nhìn đáp án bạn bên cạnh.</p></article>
-<article class="card"><div class="icon">😂</div><h3>Giáo dục có muối</h3><p class="muted">Mỗi trang đều có ít nhất một chi tiết khiến giáo viên thật sự phải suy nghĩ về cuộc đời.</p></article></div></div></section>
-
-<section class="section" id="subjects"><div class="wrap"><div class="head"><div><div class="eyebrow">02 / Hệ đào tạo</div><h2>Ba bộ môn.<br>Một học viện.</h2></div></div>
+<section id="subjects"><div class="wrap"><div class="head"><div><div class="eyebrow">02 // DEPARTMENTS</div><h2>Ba khoa.<br>Ba hệ điều hành não.</h2></div></div>
 <div class="grid3">
-<article class="card subject"><span class="num">01</span><div class="icon">➗</div><div class="eyebrow">TN MATH</div><h3>Toán học</h3><p>Đại số · Hình học · Toán thực tế · Ôn thi vào 10 · Kỹ năng không bấm máy tính bằng niềm tin.</p><span class="pill">Lớp 6–9</span><span class="pill">Ôn thi</span><span class="pill">Khó nhưng vui</span></article>
-<article class="card subject"><span class="num">02</span><div class="icon">📖</div><div class="eyebrow">TN LITERATURE</div><h3>Ngữ Văn</h3><p>Đọc hiểu · Nghị luận · Phân tích thơ · Mở bài · Kết bài · Nghệ thuật “không viết lan man”.</p><span class="pill">Lớp 6–9</span><span class="pill">GOAT</span><span class="pill">Văn có luận điểm</span></article>
-<article class="card subject"><span class="num">03</span><div class="icon">🇬🇧</div><div class="eyebrow">TN ENGLISH</div><h3>Tiếng Anh</h3><p>Grammar · Vocabulary · Reading · Exam skills · Không dịch “I am fine” thành “tôi là tốt”.</p><span class="pill">Lớp 6–9</span><span class="pill">Exam</span><span class="pill">No panic</span></article>
+<article class="card subject"><span class="num">01</span><div class="icon">➗</div><div class="eyebrow">TN MATH LAB</div><h3>TOÁN // LOGIC CORE</h3><p>Đại số, hình học, xác suất, bài toán mẹo. Câu hỏi nhìn hiền nhưng đôi lúc không hiền.</p><button class="btn cyan" onclick="openView('math')">MỞ KHOA →</button></article>
+<article class="card subject"><span class="num">02</span><div class="icon">📖</div><div class="eyebrow">TN LITERATURE LAB</div><h3>VĂN // WORD CORE</h3><p>Đọc hiểu, luận điểm, chủ đề, nghệ thuật. Không phải cứ “rất hay, rất xúc động” là xong.</p><button class="btn cyan" onclick="openView('lit')">MỞ KHOA →</button></article>
+<article class="card subject"><span class="num">03</span><div class="icon">🇬🇧</div><div class="eyebrow">TN ENGLISH LAB</div><h3>ANH // LANGUAGE CORE</h3><p>Grammar, vocabulary, reading, bẫy ngữ cảnh. Present Perfect không chịu trách nhiệm cho quá khứ của bạn.</p><button class="btn cyan" onclick="openView('eng')">MỞ KHOA →</button></article>
 </div></div></section>
 
-<section class="section" id="teachers"><div class="wrap"><div class="head"><div><div class="eyebrow">03 / Faculty</div><h2>Đội ngũ giảng viên<br>cực kỳ đáng ngờ.</h2></div><p class="muted" style="max-width:380px">Ảnh giáo viên được dùng theo concept parody. Website không tuyên bố đây là đội ngũ thật.</p></div>
-<div class="teachers">
-<article class="card teacher"><img src="goat01.jpg" alt="Giảng viên parody"><div class="body"><div class="eyebrow" style="color:#93c5fd">KHOA NGỮ VĂN · GIẢNG VIÊN GOAT 01</div><h3>Thầy “Không Có Gì Là Không Thể”</h3><p class="muted">Chuyên ngành: mở bài mạnh, kết bài gọn, ánh mắt khiến học sinh tự động nhớ luận điểm.</p><span class="pill">Nghị luận</span><span class="pill">Kỷ luật</span><span class="pill">Aura +99</span></div></article>
-<article class="card teacher"><img src="goat02.jpg" alt="Giảng viên parody"><div class="body"><div class="eyebrow" style="color:#93c5fd">KHOA NGỮ VĂN · GIẢNG VIÊN GOAT 02</div><h3>Thầy “Đọc Đề Rồi Hãy Viết”</h3><p class="muted">Chuyên ngành: đọc hiểu, phân tích hình tượng, bình tĩnh trước câu hỏi “hãy nêu tác dụng”.</p><span class="pill">Đọc hiểu</span><span class="pill">Phân tích</span><span class="pill">Aura +100</span></div></article>
-</div></div></section>
+<section id="teachers"><div class="wrap"><div class="head"><div><div class="eyebrow">03 // FACULTY</div><h2>Đội ngũ<br>giảng viên parody.</h2></div><p class="muted">Ảnh chỉ dùng trong concept website đùa với bạn bè; không khẳng định người trong ảnh là giáo viên thật.</p></div>
+<div class="teacherGrid"><article class="card teacher"><img src="goat01.jpg"><div class="teacherbody"><div class="eyebrow">LITERATURE // FACULTY 01</div><h3>Giảng viên “Đọc Đề Rồi Hãy Viết”</h3><p class="muted">Speciality: phát hiện bài văn chưa có luận điểm trong 0,8 giây.</p><span class="tag">READING</span><span class="tag">ARGUMENT</span><span class="tag">AURA +99</span></div></article>
+<article class="card teacher"><img src="goat02.jpg"><div class="teacherbody"><div class="eyebrow">ACADEMIC // FACULTY 02</div><h3>Giảng viên “Không Có Gì Là Không Thể”</h3><p class="muted">Speciality: biến “em không biết” thành “em thử suy nghĩ xem”.</p><span class="tag">DISCIPLINE</span><span class="tag">LOGIC</span><span class="tag">AURA +100</span></div></article></div></div></section>
 
-<section class="section" id="courses"><div class="wrap"><div class="head"><div><div class="eyebrow">04 / Khoá học</div><h2>Khoá học nhiều đến mức<br>không biết chọn gì.</h2></div></div>
+<section id="courses"><div class="wrap"><div class="head"><div><div class="eyebrow">04 // COURSE MARKET</div><h2>Khoá học<br>theo dạng skill tree.</h2></div></div>
 <div class="courses">
-<div class="card course"><div class="courseIcon">➗</div><div><h3>Toán 9 — Bứt phá nền tảng</h3><p>Đại số, hình học và những bài khiến Casio cũng phải suy nghĩ.</p></div><span class="pill">HOT</span></div>
-<div class="card course"><div class="courseIcon">📐</div><div><h3>Hình học — Đường thẳng không cảm xúc</h3><p>Chứng minh đến khi hình tự thấy thuyết phục.</p></div><span class="pill">NEW</span></div>
-<div class="card course"><div class="courseIcon">🎯</div><div><h3>Toán — Ôn thi vào 10</h3><p>Luyện đề, tốc độ và kỹ năng không mất điểm oan.</p></div><span class="pill">EXAM</span></div>
-<div class="card course"><div class="courseIcon">📖</div><div><h3>Văn 9 — Viết có luận điểm</h3><p>Không còn “em thấy bài thơ rất hay và rất xúc động” rồi hết bài.</p></div><span class="pill">CORE</span></div>
-<div class="card course"><div class="courseIcon">📝</div><div><h3>Văn — Nghị luận xã hội</h3><p>Biết phản biện nhưng không biến bài văn thành comment Facebook.</p></div><span class="pill">SKILL</span></div>
-<div class="card course"><div class="courseIcon">🇬🇧</div><div><h3>English 9 — Grammar Sprint</h3><p>Thì, câu điều kiện, bị động và những cú “nhìn quen mà không nhớ”.</p></div><span class="pill">CORE</span></div>
-<div class="card course"><div class="courseIcon">📚</div><div><h3>English — Reading Lab</h3><p>Đọc hiểu không cần dịch từng chữ đến hết tiết.</p></div><span class="pill">READING</span></div>
-<div class="card course"><div class="courseIcon">🚀</div><div><h3>Combo 3 môn — Sinh tồn học thuật</h3><p>Dành cho người muốn mở ba tab cùng lúc và vẫn sống sót.</p></div><span class="pill">ULTRA</span></div>
+<div class="card course"><div class="courseicon">➗</div><div><h3>Toán 9 // Bứt phá</h3><p class="muted">Đại số + hình học + bài toán thực tế.</p></div><span class="tag">HOT</span></div>
+<div class="card course"><div class="courseicon">📐</div><div><h3>Hình học // Đường tròn không lối thoát</h3><p class="muted">Chứng minh đến khi hình cũng mệt.</p></div><span class="tag">HARD</span></div>
+<div class="card course"><div class="courseicon">📖</div><div><h3>Văn 9 // Luận điểm</h3><p class="muted">Ý kiến → lý lẽ → dẫn chứng → kết luận.</p></div><span class="tag">CORE</span></div>
+<div class="card course"><div class="courseicon">✍️</div><div><h3>Văn // Phản biện</h3><p class="muted">Phản biện sắc, không biến bài văn thành comment.</p></div><span class="tag">SKILL</span></div>
+<div class="card course"><div class="courseicon">🇬🇧</div><div><h3>English // Grammar Arena</h3><p class="muted">Tenses, passive, conditionals.</p></div><span class="tag">CORE</span></div>
+<div class="card course"><div class="courseicon">📚</div><div><h3>English // Reading Lab</h3><p class="muted">Skim · scan · infer.</p></div><span class="tag">READ</span></div>
 </div></div></section>
 
-<section class="section" id="test"><div class="wrap"><div class="head"><div><div class="eyebrow">05 / Khảo thí</div><h2>KIỂM TRA ĐẦU VÀO<br>PHIÊN BẢN “ĐẦU HƠI ĐẦU”.</h2></div><p class="muted" style="max-width:420px">15 câu · 3 môn · 15 điểm. Mỗi câu đúng 1 điểm. Chọn đáp án, nhận giải thích và xếp loại sau khi hoàn thành.</p></div>
-<div class="card">
-<div class="quizTop"><div><b id="qCount">Câu 1 / 15</b><div class="tiny muted" id="qSubject">TOÁN</div></div><div><span class="pill" id="qScore">0 điểm</span></div></div>
-<div class="progress" style="margin-top:12px"><i id="progress"></i></div>
-<div class="qbox"><div class="eyebrow" id="qTag" style="color:#93c5fd">TOÁN · KHỞI ĐỘNG</div><div class="qtext" id="qText"></div><div class="answers" id="answers"></div><p id="explain" style="color:#fbbf24;font-weight:850;min-height:24px"></p></div>
-<div style="display:flex;justify-content:space-between;gap:10px;margin-top:14px"><button class="btn outline" id="resetQuiz">↻ Làm lại</button><span class="tiny muted">Không được xem đáp án bằng niềm tin.</span></div>
-<div class="result" id="result"><div class="eyebrow">KẾT QUẢ KHẢO THÍ</div><div class="scoreBig" id="finalScore">0/15</div><h3 id="finalTitle"></h3><p class="muted" id="finalText"></p><button class="btn primary" onclick="document.getElementById('register').scrollIntoView()">Đăng ký sau khi thi →</button></div>
+<section id="quiz"><div class="wrap"><div class="head"><div><div class="eyebrow">05 // ENTRANCE EXAM // ULTRA HARD</div><h2>30 CÂU.<br>KHÓ + MẸO + HÀI.</h2></div><p class="muted" style="max-width:470px">10 Toán · 10 Văn · 10 Anh. Câu hỏi vẫn bám kiến thức, nhưng có những cú lừa bằng ngữ nghĩa, logic và cách đọc đề.</p></div>
+<div class="quiz"><div class="qtop"><div><b id="qc">Câu 1 / 30</b><div class="tiny muted" id="qs">TOÁN</div></div><b id="sc">0 điểm</b></div><div class="progress"><i id="pr"></i></div><div class="eyebrow" id="qt">TOÁN</div><div class="q" id="qq"></div><div class="answers" id="aa"></div><p class="ex" id="ex"></p><div class="result" id="res"><div class="eyebrow">FINAL RESULT</div><div class="big" id="bs">0/30</div><h3 id="rt"></h3><p class="muted" id="rx"></p></div><button class="btn" id="reset" style="margin-top:14px">↻ LÀM LẠI</button></div></div></section>
+
+<section id="rank"><div class="wrap"><div class="head"><div><div class="eyebrow">06 // LEADERBOARD</div><h2>BXH<br>vô cùng nghiêm túc.</h2></div></div>
+<table class="table"><thead><tr><th>#</th><th>Nickname</th><th>Khối</th><th>Main</th><th>Điểm</th><th>Danh hiệu</th></tr></thead><tbody>
+<tr><td class="gold">🥇 01</td><td><b>Máy Tính Không Có Pin</b></td><td>9</td><td>Toán</td><td>9.93</td><td>Chúa Tể Phương Trình</td></tr>
+<tr><td>🥈 02</td><td><b>Nguyễn Văn Luận Điểm</b></td><td>9</td><td>Văn</td><td>9.80</td><td>Thánh Luận Điểm</td></tr>
+<tr><td>🥉 03</td><td><b>Oxford Nhưng Quên Từ</b></td><td>9</td><td>Anh</td><td>9.72</td><td>CEO Thì Hiện Tại</td></tr>
+<tr><td>04</td><td><b>Casio Có Tâm Hồn</b></td><td>9</td><td>Toán</td><td>9.61</td><td>Máy Biết Suy Nghĩ</td></tr>
+<tr><td>05</td><td><b>Thơ Hay Vì Em Bảo Hay</b></td><td>9</td><td>Văn</td><td>9.55</td><td>Phê Bình Tự Phong</td></tr>
+<tr><td>06</td><td><b>Google Dịch Offline</b></td><td>9</td><td>Anh</td><td>9.49</td><td>Người Tối Cổ</td></tr>
+<tr><td>07</td><td><b>X² + Y² = Tôi</b></td><td>9</td><td>Toán</td><td>9.27</td><td>Ẩn Số Của Lớp</td></tr>
+<tr><td>08</td><td><b>Luận Điểm Chạy Marathon</b></td><td>9</td><td>Văn</td><td>9.20</td><td>Viết 4 Trang Không Thở</td></tr>
+<tr><td>09</td><td><b>Present Perfect Với Tương Lai</b></td><td>9</td><td>Anh</td><td>8.88</td><td>Du Hành Thời Gian</td></tr>
+</tbody></table></div></section>
+
+<section id="profiles"><div class="wrap"><div class="head"><div><div class="eyebrow">07 // STUDENT DATABASE</div><h2>Hồ sơ học sinh<br>như nhân vật RPG.</h2></div></div>
+<div class="profiles">
+<div class="card profile" onclick="openView('p1')"><div class="avatar">MC</div><h3>Máy Tính Không Có Pin</h3><p class="muted">9A1 · Main Toán</p><div class="score">9.93</div><span class="tag">TOP 1</span><span class="tag">S-RANK</span></div>
+<div class="card profile" onclick="openView('p2')"><div class="avatar">VL</div><h3>Nguyễn Văn Luận Điểm</h3><p class="muted">9A2 · Main Văn</p><div class="score">9.80</div><span class="tag">TOP 2</span><span class="tag">WORDSMITH</span></div>
+<div class="card profile" onclick="openView('p3')"><div class="avatar">OX</div><h3>Oxford Nhưng Quên Từ</h3><p class="muted">9A3 · Main Anh</p><div class="score">9.72</div><span class="tag">TOP 3</span><span class="tag">GRAMMAR</span></div>
 </div></div></section>
 
-<section class="section" id="ranking"><div class="wrap"><div class="head"><div><div class="eyebrow">06 / Hall of Fame</div><h2>BXH đầu vào<br>của những con người rất đáng ngờ.</h2></div><p class="muted">Dữ liệu minh họa/parody. Tên được cố tình làm hài.</p></div>
-<div class="card"><div class="filter"><button class="active" data-filter="all">Tất cả</button><button data-filter="Toán">Toán</button><button data-filter="Văn">Văn</button><button data-filter="Anh">Anh</button></div>
-<table class="table"><thead><tr><th>Hạng</th><th>Học viên</th><th>Lớp</th><th>Môn</th><th>Điểm</th><th>Danh hiệu</th></tr></thead><tbody id="rankBody">
-<tr data-sub="Toán"><td class="rank1">🥇 1</td><td><b>Máy Tính Không Có Pin</b></td><td>9A1</td><td>Toán</td><td>9.93</td><td>Chúa Tể Phương Trình</td></tr>
-<tr data-sub="Văn"><td class="rank2">🥈 2</td><td><b>Nguyễn Văn Luận Điểm</b></td><td>9A2</td><td>Văn</td><td>9.80</td><td>Thánh Mở Bài</td></tr>
-<tr data-sub="Anh"><td class="rank3">🥉 3</td><td><b>Oxford Nhưng Quên Từ</b></td><td>9A3</td><td>Anh</td><td>9.72</td><td>CEO Thì Hiện Tại</td></tr>
-<tr data-sub="Toán"><td>4</td><td><b>Định Lý Biết Đi</b></td><td>9A1</td><td>Toán</td><td>9.61</td><td>Người Thân Của Pytago</td></tr>
-<tr data-sub="Văn"><td>5</td><td><b>Em Không Học Văn Nhưng Em Cảm Nhận</b></td><td>9A4</td><td>Văn</td><td>9.55</td><td>Chuyên Gia Cảm Nhận</td></tr>
-<tr data-sub="Anh"><td>6</td><td><b>Google Dịch Offline</b></td><td>9A2</td><td>Anh</td><td>9.49</td><td>Người Tối Cổ</td></tr>
-<tr data-sub="Toán"><td>7</td><td><b>Casio FX-570 Nhưng Có Tâm Hồn</b></td><td>9A5</td><td>Toán</td><td>9.42</td><td>Máy Tính Biết Suy Nghĩ</td></tr>
-<tr data-sub="Văn"><td>8</td><td><b>Thơ Hay Vì Em Bảo Hay</b></td><td>9A1</td><td>Văn</td><td>9.38</td><td>Nhà Phê Bình Tự Phong</td></tr>
-<tr data-sub="Anh"><td>9</td><td><b>English Bằng Niềm Tin</b></td><td>9A3</td><td>Anh</td><td>9.31</td><td>Phát Âm Theo Linh Cảm</td></tr>
-<tr data-sub="Toán"><td>10</td><td><b>X² + Y² = Tôi</b></td><td>9A2</td><td>Toán</td><td>9.27</td><td>Ẩn Số Của Lớp</td></tr>
-<tr data-sub="Văn"><td>11</td><td><b>Luận Điểm Chạy Marathon</b></td><td>9A3</td><td>Văn</td><td>9.20</td><td>Viết 4 Trang Không Thở</td></tr>
-<tr data-sub="Anh"><td>12</td><td><b>Shakespeare Có Hẹn</b></td><td>9A4</td><td>Anh</td><td>9.15</td><td>Ngữ Pháp Hoàng Gia</td></tr>
-<tr data-sub="Toán"><td>13</td><td><b>Hình Học Không Gian Nhưng Em Ở Trái Đất</b></td><td>9A5</td><td>Toán</td><td>9.08</td><td>Đường Thẳng Mất Phương Hướng</td></tr>
-<tr data-sub="Văn"><td>14</td><td><b>Ẩn Dụ Đi Lạc</b></td><td>9A2</td><td>Văn</td><td>8.97</td><td>Thám Tử Biện Pháp Tu Từ</td></tr>
-<tr data-sub="Anh"><td>15</td><td><b>Present Perfect Với Tương Lai</b></td><td>9A1</td><td>Anh</td><td>8.88</td><td>Du Hành Thời Gian</td></tr>
-</tbody></table></div></div></section>
+<section id="scores"><div class="wrap"><div class="head"><div><div class="eyebrow">08 // REPORT CARD</div><h2>Bảng điểm<br>công khai nội bộ parody.</h2></div></div>
+<table class="table"><thead><tr><th>Học sinh</th><th>Toán</th><th>Văn</th><th>Anh</th><th>GPA</th><th>Status</th></tr></thead><tbody>
+<tr><td><b>Máy Tính Không Có Pin</b></td><td>9.93</td><td>9.20</td><td>9.40</td><td class="gold">9.51</td><td>🟢 S-Rank</td></tr>
+<tr><td><b>Nguyễn Văn Luận Điểm</b></td><td>9.10</td><td>9.80</td><td>9.22</td><td class="gold">9.37</td><td>🟢 S-Rank</td></tr>
+<tr><td><b>Oxford Nhưng Quên Từ</b></td><td>8.95</td><td>9.10</td><td>9.72</td><td class="gold">9.26</td><td>🟢 S-Rank</td></tr>
+<tr><td><b>MIM Trịnh</b></td><td>8.10</td><td>7.80</td><td>8.40</td><td>8.10</td><td>🟡 BTVN pending</td></tr>
+</tbody></table></div></section>
 
-<section class="section" id="students"><div class="wrap"><div class="head"><div><div class="eyebrow">07 / Student Spotlight</div><h2>Học sinh tiêu biểu.<br>Không tiêu biểu thì… vẫn lên web.</h2></div></div>
-<div class="studentGrid">
-<article class="card student"><div class="medal">🏆</div><h3>Máy Tính Không Có Pin</h3><p class="muted">Chuyên Toán · “Em không cần máy, máy cần em.”</p><div class="score">9.93</div><div class="bar"><i style="width:99.3%"></i></div><p><span class="pill">Top 1</span><span class="pill">Toán</span><span class="pill">Không sợ đề</span></p></article>
-<article class="card student"><div class="medal">📖</div><h3>Nguyễn Văn Luận Điểm</h3><p class="muted">Chuyên Văn · Có khả năng biến một câu hỏi thành 4 luận điểm.</p><div class="score">9.80</div><div class="bar"><i style="width:98%"></i></div><p><span class="pill">Top 2</span><span class="pill">Văn</span><span class="pill">Mở bài quốc dân</span></p></article>
-<article class="card student"><div class="medal">🇬🇧</div><h3>Oxford Nhưng Quên Từ</h3><p class="muted">Chuyên Anh · Phát âm tự tin, đôi khi từ vựng không đồng ý.</p><div class="score">9.72</div><div class="bar"><i style="width:97.2%"></i></div><p><span class="pill">Top 3</span><span class="pill">Anh</span><span class="pill">Grammar Boss</span></p></article>
-<article class="card student"><div class="medal">🧠</div><h3>Em Học Vì Mẹ Bảo</h3><p class="muted">Đặc biệt ở khả năng xuất hiện đúng lúc giáo viên hỏi bài.</p><div class="score">9.60</div><div class="bar"><i style="width:96%"></i></div></article>
-<article class="card student"><div class="medal">😂</div><h3>Học Sinh Bấm Nộp Nhầm</h3><p class="muted">Kỷ lục: hoàn thành bài trong 13 giây. Điểm thì không tiện công bố.</p><div class="score">???</div><div class="bar"><i style="width:47%"></i></div></article>
-<article class="card student"><div class="medal">🔥</div><h3>Người Không Bao Giờ Học Bài</h3><p class="muted">Tài năng đặc biệt: vẫn biết đáp án bằng một cơ chế chưa được khoa học giải thích.</p><div class="score">8.76</div><div class="bar"><i style="width:87.6%"></i></div></article>
+<section id="badges"><div class="wrap"><div class="head"><div><div class="eyebrow">09 // ACHIEVEMENT SYSTEM</div><h2>36 huy hiệu.<br>Không có cái nào vô nghĩa.</h2></div></div>
+<div class="badges">
+<div class="badge"><div class="em">🔥</div><b>7-Day Streak</b><p class="tiny muted">Học 7 ngày liên tiếp.</p><span class="tag">UNLOCKED</span></div>
+<div class="badge"><div class="em">🧠</div><b>Brain Turbo</b><p class="tiny muted">90%+ bài thi.</p><span class="tag">UNLOCKED</span></div>
+<div class="badge"><div class="em">📖</div><b>Văn Có Luận Điểm</b><p class="tiny muted">Không viết lan man.</p><span class="tag">RARE</span></div>
+<div class="badge"><div class="em">🛡️</div><b>Anti-Procrastination</b><p class="tiny muted">Nộp BTVN trước hạn.</p><span class="tag">RARE</span></div>
+<div class="badge"><div class="em">🏆</div><b>Top 1</b><p class="tiny muted">Đứng đầu BXH.</p><span class="tag">LEGENDARY</span></div>
+<div class="badge"><div class="em">⚡</div><b>Speedrunner</b><p class="tiny muted">Quest đúng giờ.</p><span class="tag">EPIC</span></div>
+<div class="badge"><div class="em">🚨</div><b>Escaped Homework</b><p class="tiny muted">30 ngày không bị truy nã.</p><span class="tag">MYTHIC</span></div>
+<div class="badge lock"><div class="em">👑</div><b>Academy Legend</b><p class="tiny muted">Mở toàn bộ thành tích.</p><span class="tag">LOCKED</span></div>
 </div></div></section>
 
-<section class="section"><div class="wrap"><div class="feature"><div class="darkbox"><div class="eyebrow" style="color:#93c5fd">08 / Hệ thống cảnh báo</div><h2>⚠️ Bộ phận chống học lệch</h2><p class="muted">Bạn học Toán 4 tiếng nhưng bỏ Văn? Hệ thống không phán xét. Hệ thống chỉ… nhìn bạn.</p><div style="margin-top:20px"><span class="pill">Toán 33%</span><span class="pill">Văn 33%</span><span class="pill">Anh 34%</span></div></div><div class="card"><div class="eyebrow">Thông báo khẩn</div><h3>📢 Học sinh lưu ý</h3><div class="feed"><div class="feedItem"><span>🟢</span><div><b>Không học sau 2 giờ sáng</b><br><span class="tiny muted">Não người không phải máy chủ.</span></div></div><div class="feedItem"><span>🟡</span><div><b>Đừng gửi “em chưa học gì”</b><br><span class="tiny muted">Sau đó đạt 9.75. Ban quản trị sẽ nghi ngờ.</span></div></div><div class="feedItem"><span>🔴</span><div><b>Cấm đổ lỗi cho đề</b><br><span class="tiny muted">Trừ khi đề thật sự in ngược.</span></div></div></div></div></div></div></section>
+<section id="wanted"><div class="wrap"><div class="wanted"><div class="eyebrow" style="color:#ff7788">10 // HOMEWORK POLICE</div><h2>🚨 TRUY NÃ BTVN</h2><p class="muted">Bảng parody dành cho những “nghi phạm” chưa hoàn thành bài tập. Không phải hồ sơ kỷ luật thật.</p>
+<div class="wantedGrid">
+<div class="wantedItem"><div class="wantedRow"><div class="mug">🧑‍💻</div><div><strong>MIM Trịnh</strong><br><span class="tiny muted">Chuyên án: BTVN Toán chưa nộp · 3 ngày</span></div><span class="tag" style="color:#ff8e9c">WANTED</span></div><p class="tiny">🚨 Mức cảnh báo: 🔥🔥🔥🔥 · Lời khai cuối: “em nộp tối nay”.</p></div>
+<div class="wantedItem"><div class="wantedRow"><div class="mug">📚</div><div><strong>Người Hứa Học Từ Mai</strong><br><span class="tiny muted">4 bài Reading chưa mở</span></div><span class="tag">WANTED</span></div><p class="tiny">Đang ẩn náu trong tab giải trí.</p></div>
+<div class="wantedItem"><div class="wantedRow"><div class="mug">⏱️</div><div><strong>Thánh Deadline</strong><br><span class="tiny muted">Nộp bài lúc 23:59:59</span></div><span class="tag">ALERT</span></div><p class="tiny">Có khả năng xuất hiện bất ngờ 1 giây trước hạn.</p></div>
+<div class="wantedItem"><div class="wantedRow"><div class="mug">👻</div><div><strong>Học Sinh Tàng Hình</strong><br><span class="tiny muted">Không phản hồi khi giáo viên gọi</span></div><span class="tag">MISSING</span></div><p class="tiny">Hệ thống chưa xác định được vị trí.</p></div>
+</div></div></div></section>
 
-<section class="section" id="news"><div class="wrap"><div class="head"><div><div class="eyebrow">09 / Newsroom</div><h2>Tin tức học viện<br>rất không cần thiết.</h2></div></div>
-<div class="news">
-<article class="card newsItem"><div class="newsIcon">🚨</div><div><div class="eyebrow">TIN KHẨN</div><h3>Học sinh đạt 10 điểm nhưng vẫn hỏi “có được cộng thêm không?”</h3><p class="muted">Hội đồng khảo thí hiện đang họp để xác định 10 có phải là 10 hay không.</p></div></article>
-<article class="card newsItem"><div class="newsIcon">📐</div><div><div class="eyebrow">TOÁN</div><h3>Một đường thẳng vừa bị yêu cầu chứng minh nó tồn tại</h3><p class="muted">Nhân chứng cho biết đường thẳng vẫn bình tĩnh.</p></div></article>
-<article class="card newsItem"><div class="newsIcon">📖</div><div><div class="eyebrow">VĂN</div><h3>Học sinh viết “tác giả muốn gửi gắm…” 7 lần trong một đoạn</h3><p class="muted">Ban chuyên môn đang tìm cách giải cứu cụm từ này.</p></div></article>
-<article class="card newsItem"><div class="newsIcon">🇬🇧</div><div><div class="eyebrow">ENGLISH</div><h3>Present Perfect tuyên bố sẽ không quay lại quá khứ</h3><p class="muted">Thông tin chưa được kiểm chứng bởi Shakespeare.</p></div></article>
+<section><div class="wrap"><div class="head"><div><div class="eyebrow">11 // LIVE FEED</div><h2>Hoạt động<br>trực tiếp.</h2></div></div>
+<div class="activity">
+<div class="event"><b>20:41</b><div><b>Máy Tính Không Có Pin</b> đạt 9.93.<br><span class="tiny muted">Hệ thống: “bình thường.”</span></div></div>
+<div class="event"><b>20:38</b><div><b>Nguyễn Văn Luận Điểm</b> mở khóa “Văn Có Luận Điểm”.</div></div>
+<div class="event"><b>20:35</b><div><b>MIM Trịnh</b> vẫn chưa nộp BTVN.<br><span class="tiny muted">🚨 Homework Police đã được thông báo.</span></div></div>
+<div class="event"><b>20:32</b><div><b>Oxford Nhưng Quên Từ</b> tra từ “although”.<br><span class="tiny muted">Hệ thống không phán xét.</span></div></div>
 </div></div></section>
 
-<section class="section"><div class="wrap"><div class="head"><div><div class="eyebrow">10 / Lịch học</div><h2>Thời khóa biểu<br>không ai hỏi nhưng vẫn có.</h2></div></div>
-<div class="card timeline">
-<div class="time"><b>07:30</b><div><strong>Toán — Khởi động não</strong><br><span class="muted">Mục tiêu: hiểu đề trước khi hoảng.</span></div></div>
-<div class="time"><b>09:00</b><div><strong>Văn — Luận điểm quốc dân</strong><br><span class="muted">Mục tiêu: viết câu chủ đề mà không vòng quanh Trái Đất.</span></div></div>
-<div class="time"><b>14:00</b><div><strong>English — Grammar Arena</strong><br><span class="muted">Mục tiêu: không nhầm “has” với “have” khi đang căng thẳng.</span></div></div>
-<div class="time"><b>19:30</b><div><strong>Study Hall — Khu vực sống sót</strong><br><span class="muted">Không game. Không lướt vô tận. Có bài tập.</span></div></div>
-<div class="time"><b>22:00</b><div><strong>Đóng học viện</strong><br><span class="muted">Đi ngủ. Não cũng cần bảo trì.</span></div></div>
-</div></div></section>
+<section><div class="wrap"><div class="head"><div><div class="eyebrow">12 // ADMIN TERMINAL</div><h2>Terminal.<br>Cho người thích quyền lực.</h2></div></div>
+<div class="panel"><div class="eyebrow">TRẠNG NẬM OS</div><p><code>academy.full_scan()</code></p><p>✓ Core online<br>✓ Quiz engine online — 30 questions<br>✓ Leaderboard online<br>✓ Profiles online<br>✓ Badge system online<br>✓ Homework police online<br>⚠ <b>MIM Trịnh</b>: <span style="color:var(--red)">BTVN NOT FOUND</span></p><button class="btn cyan" onclick="scan()">RUN FULL SYSTEM SCAN</button><p id="scanOut" class="tiny muted"></p></div></div></section>
+</main>
 
-<section class="section"><div class="wrap"><div class="head"><div><div class="eyebrow">11 / Bảng danh dự</div><h2>Các danh hiệu<br>không ai yêu cầu.</h2></div></div>
-<div class="grid4">
-<div class="card"><div class="icon">🧠</div><h3>Não hoạt động</h3><p class="muted">Dành cho người hiểu bài trước khi giáo viên giải.</p></div>
-<div class="card"><div class="icon">📝</div><h3>Thánh ghi chép</h3><p class="muted">Vở sạch đến mức chưa biết có chữ hay không.</p></div>
-<div class="card"><div class="icon">⏱️</div><h3>Speedrunner</h3><p class="muted">Nộp bài sớm nhưng vẫn kiểm tra lại.</p></div>
-<div class="card"><div class="icon">🫡</div><h3>Chiến binh BTVN</h3><p class="muted">Không để bài tập qua đêm. Hoặc ít nhất là cố.</p></div>
-</div></div></section>
+<div id="views" style="display:none"><div class="viewbar"><div class="wrap"><span class="back" onclick="closeView()">← QUAY LẠI ACADEMY</span><span class="tiny muted">ULTRA / SUBPAGE</span></div></div>
+<div id="math" class="view"><section><div class="wrap"><div class="head"><div><div class="eyebrow">MATH DEPARTMENT // 01</div><h2>TOÁN LAB<br>NO MERCY.</h2></div></div><div class="grid3"><div class="card"><div class="icon">➗</div><h3>Đại số</h3><p class="muted">Biểu thức, phương trình, hệ phương trình, bài toán thực tế.</p></div><div class="card"><div class="icon">📐</div><h3>Hình học</h3><p class="muted">Tam giác, đường tròn, chứng minh và suy luận.</p></div><div class="card"><div class="icon">🎯</div><h3>Challenge</h3><p class="muted">Câu mẹo và bài phân loại.</p></div></div><div class="panel" style="margin-top:15px"><h3>Roadmap</h3><div class="lesson"><div class="lessonNo">01</div><div><b>Nền tảng</b><br><span class="muted">Ôn công thức + 12 bài.</span></div></div><div class="lesson"><div class="lessonNo">02</div><div><b>Phân loại</b><br><span class="muted">8 bài nâng cao.</span></div></div><div class="lesson"><div class="lessonNo">03</div><div><b>Boss Fight</b><br><span class="muted">5 câu cực khó.</span></div></div></div></div></section></div>
+<div id="lit" class="view"><section><div class="wrap"><div class="head"><div><div class="eyebrow">LITERATURE DEPARTMENT // 02</div><h2>VĂN LAB<br>WRITE WITH PURPOSE.</h2></div></div><div class="grid3"><div class="card"><div class="icon">📖</div><h3>Đọc hiểu</h3><p class="muted">Nội dung, chủ đề, nghệ thuật, thông điệp.</p></div><div class="card"><div class="icon">🧠</div><h3>Nghị luận</h3><p class="muted">Luận điểm → lý lẽ → dẫn chứng → kết luận.</p></div><div class="card"><div class="icon">✍️</div><h3>Biện pháp tu từ</h3><p class="muted">Ẩn dụ, hoán dụ, điệp ngữ, so sánh và những cú bẫy.</p></div></div><div class="panel" style="margin-top:15px"><h3>Skill Tree</h3><span class="tag">XÁC ĐỊNH CHỦ ĐỀ</span><span class="tag">PHÂN TÍCH HÌNH ẢNH</span><span class="tag">LUẬN ĐIỂM</span><span class="tag">DẪN CHỨNG</span><span class="tag">PHẢN BIỆN</span></div></div></section></div>
+<div id="eng" class="view"><section><div class="wrap"><div class="head"><div><div class="eyebrow">ENGLISH DEPARTMENT // 03</div><h2>ENGLISH LAB<br>NO PANIC.</h2></div></div><div class="grid3"><div class="card"><div class="icon">⏱️</div><h3>Tenses</h3><p class="muted">Present, past, perfect, future.</p></div><div class="card"><div class="icon">🧩</div><h3>Grammar</h3><p class="muted">Passive, conditionals, clauses.</p></div><div class="card"><div class="icon">📚</div><h3>Reading</h3><p class="muted">Skim, scan, infer.</p></div></div></div></section></div>
+<div id="p1" class="view"><section><div class="wrap"><div class="head"><div><div class="eyebrow">PROFILE // S-RANK</div><h2>Máy Tính Không Có Pin</h2></div></div><div class="profilePage"><div class="profileHero"><div class="avatar">MC</div><div class="eyebrow">TOP 1</div><h3>Máy Tính Không Có Pin</h3><p class="muted">9A1 · Main Toán</p><div class="score">9.93</div><span class="tag">BRAIN TURBO</span><span class="tag">7-DAY</span></div><div><div class="metrics"><div class="metric"><span class="tiny muted">Toán</span><b>9.93</b></div><div class="metric"><span class="tiny muted">Văn</span><b>9.20</b></div><div class="metric"><span class="tiny muted">Anh</span><b>9.40</b></div></div><div class="panel" style="margin-top:14px"><h3>Thành tích</h3><span class="tag">Top 1</span><span class="tag">Brain Turbo</span><span class="tag">Anti-Procrastination</span></div></div></div></div></section></div>
+<div id="p2" class="view"><section><div class="wrap"><div class="head"><div><div class="eyebrow">PROFILE // S-RANK</div><h2>Nguyễn Văn Luận Điểm</h2></div></div><div class="profilePage"><div class="profileHero"><div class="avatar">VL</div><div class="eyebrow">TOP 2</div><h3>Nguyễn Văn Luận Điểm</h3><p class="muted">9A2 · Main Văn</p><div class="score">9.80</div><span class="tag">WORDSMITH</span></div><div><div class="metrics"><div class="metric"><span class="tiny muted">Toán</span><b>9.10</b></div><div class="metric"><span class="tiny muted">Văn</span><b>9.80</b></div><div class="metric"><span class="tiny muted">Anh</span><b>9.22</b></div></div><div class="panel" style="margin-top:14px"><h3>Huy hiệu</h3><span class="tag">Văn Có Luận Điểm</span><span class="tag">7-Day Streak</span></div></div></div></div></section></div>
+<div id="p3" class="view"><section><div class="wrap"><div class="head"><div><div class="eyebrow">PROFILE // S-RANK</div><h2>Oxford Nhưng Quên Từ</h2></div></div><div class="profilePage"><div class="profileHero"><div class="avatar">OX</div><div class="eyebrow">TOP 3</div><h3>Oxford Nhưng Quên Từ</h3><p class="muted">9A3 · Main Anh</p><div class="score">9.72</div><span class="tag">GRAMMAR</span></div><div><div class="metrics"><div class="metric"><span class="tiny muted">Toán</span><b>8.95</b></div><div class="metric"><span class="tiny muted">Văn</span><b>9.10</b></div><div class="metric"><span class="tiny muted">Anh</span><b>9.72</b></div></div><div class="panel" style="margin-top:14px"><h3>Huy hiệu</h3><span class="tag">CEO Thì Hiện Tại</span><span class="tag">Reading Pro</span></div></div></div></div></section></div>
+</div>
 
-<section class="section"><div class="wrap"><div class="head"><div><div class="eyebrow">12 / Góc meme</div><h2>Phòng thí nghiệm<br>meme học thuật.</h2></div><p class="muted">Giữ các ảnh bạn đã cung cấp trong bộ trước, thêm chúng vào gallery.</p></div>
-<div class="memes"><img src="meme01.jpg" alt="Meme học thuật"><img src="meme02.jpg" alt="Meme học thuật"><img src="meme03.jpg" alt="Meme học thuật"><img src="goat02.jpg" alt="Ảnh parody giáo viên"></div>
-</div></section>
-
-<section class="section" id="register"><div class="wrap"><div class="formGrid"><div><div class="eyebrow">13 / Tuyển sinh</div><h2>Đăng ký vào<br>học viện huyền thoại.</h2><p class="lead">Chọn biệt danh để chơi vui với bạn bè. Không nhập số điện thoại, địa chỉ nhà, mật khẩu hoặc dữ liệu riêng tư.</p><div class="card" style="margin-top:20px"><h3>Quy trình 4 bước</h3><p>① Đăng ký → ② Thi đầu vào → ③ Nhận xếp loại → ④ Lên BXH nếu đạt thành tích.</p></div></div>
-<form class="form" id="registerForm"><label>Biệt danh<input id="regName" required placeholder="Ví dụ: Máy Tính Không Có Pin"></label><label>Lớp<select id="regClass"><option>8</option><option>9</option><option>10</option><option>Khác</option></select></label><label>Môn<select id="regSubject"><option>Toán</option><option>Ngữ Văn</option><option>Tiếng Anh</option><option>Cả 3 môn</option></select></label><label>Mục tiêu<textarea id="regGoal" placeholder="Ví dụ: đạt 9 điểm và không hoảng khi gặp câu khó"></textarea></label><button class="btn primary">🚀 Gửi đăng ký</button><p class="small">Bản hiện tại là mô phỏng. Database thật sẽ được nối ở bước sau.</p></form></div></div></section>
-
-<section class="section"><div class="wrap"><div class="card manager"><div class="avatar">TN</div><div><div class="eyebrow">14 / Ban quản lý</div><h2 style="font-size:48px;margin:5px 0">Trạng Nậm</h2><h3>Founder · Administrator · Người duyệt meme</h3><p class="muted">Phụ trách ý tưởng, nội dung, giao diện và quyết định câu nào đủ hài để được lên website.</p><span class="pill">Founder</span><span class="pill">Administrator</span><span class="pill">Meme Approval</span></div></div></div></section>
-
-<section class="section faq"><div class="wrap"><div class="head"><div><div class="eyebrow">15 / FAQ</div><h2>Những câu hỏi<br>rất đáng hỏi.</h2></div></div>
-<details><summary>Đây có phải trung tâm thật không?</summary><p class="muted">Không. Đây là parody/fan-made.</p></details>
-<details><summary>Điểm trong BXH có thật không?</summary><p class="muted">Không, bản này dùng dữ liệu minh họa. Khi có database, dữ liệu người dùng sẽ được lưu theo thiết kế.</p></details>
-<details><summary>Giảng viên trong ảnh có thật sự dạy ở đây không?</summary><p class="muted">Không. Ảnh chỉ là một phần concept parody; website không đại diện cho người thật.</p></details>
-<details><summary>Tại sao website dài thế?</summary><p class="muted">Vì bạn yêu cầu “càng nhiều mục càng tốt”. Ban quản trị đã tuân lệnh.</p></details>
-</div></section>
-
-<footer><div class="wrap foot"><div><div class="logo">TRẠNG NẬM <span>EDUCATION</span></div><p class="small">TOÁN · NGỮ VĂN · TIẾNG ANH · PARODY / FAN-MADE</p></div><div><b>Founder & Administrator</b><p class="small">Trạng Nậm</p></div></div></footer>
+<footer><div class="wrap foot"><div><div class="logo">TRẠNG NẬM <span>// ULTRA</span></div><p class="tiny muted">TOÁN · VĂN · ANH · THI · BXH · HỒ SƠ · BẢNG ĐIỂM · HUY HIỆU · BTVN POLICE</p></div><div class="tiny muted">Founder & Admin: Trạng Nậm<br>PARODY / FAN-MADE</div></div></footer>
 <div class="toast" id="toast"></div>
 
 <script>
-const qs=[
-["TOÁN","Cơ bản","25 × 4 bằng bao nhiêu?",["50","75","100","125"],2,"25 × 4 = 100."],
-["TOÁN","Đại số","Nếu 2x = 18 thì x bằng?",["6","8","9","12"],2,"Chia hai vế cho 2: x = 9."],
-["TOÁN","Hình học","Tổng ba góc trong một tam giác bằng?",["90°","180°","270°","360°"],1,"Tổng ba góc tam giác là 180°."],
-["TOÁN","Tư duy","Số nào là số nguyên tố?",["21","29","35","49"],1,"29 chỉ có hai ước dương là 1 và 29."],
-["TOÁN","Thực tế","Một món 200.000đ giảm 10%. Giá mới?",["180.000đ","190.000đ","195.000đ","170.000đ"],0,"Giảm 20.000đ nên còn 180.000đ."],
-["VĂN","Đọc hiểu","Biện pháp tu từ dùng sự vật như con người là?",["Ẩn dụ","Hoán dụ","Nhân hóa","Liệt kê"],2,"Đó là nhân hóa."],
-["VĂN","Nghị luận","Một luận điểm tốt cần có yếu tố nào?",["Rõ ràng và có lý lẽ","Càng dài càng tốt","Càng nhiều dấu chấm than càng tốt","Không cần dẫn chứng"],0,"Luận điểm cần rõ và được làm sáng tỏ bằng lý lẽ, dẫn chứng."],
-["VĂN","Thơ","Hình ảnh lặp lại có chủ ý trong thơ thường góp phần?",["Tạo nhịp và nhấn mạnh","Xóa chủ đề","Làm bài ngắn hơn","Không có tác dụng"],0,"Sự lặp lại có thể tạo nhịp, nhấn mạnh hình ảnh hoặc cảm xúc."],
-["VĂN","Đọc hiểu","Từ “mẹ!” trong lời gọi thường có thể là?",["Thán từ","Quan hệ từ","Số từ","Trợ từ"],0,"“Mẹ!” có thể được dùng như tiếng gọi, mang sắc thái cảm xúc."],
-["VĂN","Kỹ năng","Câu kết đoạn nghị luận nên?",["Chuyển sang chuyện khác","Khẳng định/khái quát ý","Kể chuyện dài hơn","Bỏ trống"],1,"Câu kết nên khái quát và khẳng định nội dung vừa phân tích."],
-["ANH","Grammar","I ___ to school every day.",["go","goes","going","gone"],0,"Chủ ngữ I dùng động từ nguyên mẫu: go."],
-["ANH","Grammar","She ___ finished her homework.",["have","has","is","do"],1,"She + has trong Present Perfect."],
-["ANH","Vocabulary","“Difficult” gần nghĩa nhất với?",["easy","hard","small","fast"],1,"Difficult = hard."],
-["ANH","Reading","If you study regularly, you ___ improve.",["will","wouldn’t","did","has"],0,"Trong câu điều kiện loại 1: If + hiện tại, will + V."],
-["ANH","Grammar","They ___ football yesterday.",["play","plays","played","playing"],2,"Yesterday là dấu hiệu quá khứ đơn: played."]
+const Q=[
+["TOÁN","Một số có 2 chữ số. Đổi chỗ hai chữ số thì số mới lớn hơn số cũ 27. Tổng hai chữ số là 9. Số ban đầu?",["36","45","54","63"],0,"Gọi số 10a+b: a+b=9 và 9(b-a)=27 ⇒ b-a=3 ⇒ a=3,b=6."],
+["TOÁN","Lớp có 30 học sinh; 20 thích Toán, 18 thích Văn, 5 không thích cả hai. Ít nhất có bao nhiêu bạn thích cả hai?",["8","10","13","15"],2,"20+18-(30-5)=13."],
+["TOÁN","Nếu x²=9 thì x bằng?",["3","-3","±3","9"],2,"Có hai nghiệm: 3 và -3."],
+["TOÁN","Tam giác có hai góc 35° và 65°. Góc còn lại?",["70°","80°","90°","100°"],1,"180°-35°-65°=80°."],
+["TOÁN","Hình vuông chu vi 20 cm. Diện tích?",["20","25","40","100"],1,"Cạnh 5 cm ⇒ S=25 cm²."],
+["TOÁN","Cho a+b=10, ab=21. a²+b² bằng?",["42","58","79","100"],1,"100-42=58."],
+["TOÁN","Số chia 3 dư 2. Khi chia 6 có thể dư?",["0 hoặc 2","1 hoặc 5","2 hoặc 5","3 hoặc 4"],2,"Dạng 3k+2 cho phần dư 2 hoặc 5 khi chia 6."],
+["TOÁN","3 con mèo bắt 3 con chuột trong 3 phút. 100 mèo bắt 100 chuột trong bao lâu?",["3 phút","30 phút","100 phút","300 phút"],0,"Mỗi mèo bắt 1 chuột trong 3 phút ⇒ 100 mèo vẫn 3 phút."],
+["TOÁN","2^x=32. x bằng?",["4","5","6","8"],1,"32=2^5."],
+["TOÁN","Bán kính đường tròn 3 cm, π≈3,14. Chu vi?",["9,42","18,84","28,26","6,28"],1,"2πr=18,84 cm."],
+["VĂN","Luận điểm trong nghị luận là?",["Câu càng dài càng tốt","Ý kiến chính cần làm sáng tỏ","Một dẫn chứng","Phần mở bài"],1,"Luận điểm là ý kiến/quan điểm trung tâm."],
+["VĂN","“Mẹ là mặt trời của con” chủ yếu là?",["So sánh","Ẩn dụ","Hoán dụ","Điệp ngữ"],1,"Gọi mẹ bằng hình ảnh mặt trời theo nghĩa chuyển ⇒ ẩn dụ."],
+["VĂN","“Mẹ ơi!” có thể xác định “ơi” là?",["Danh từ","Thán từ","Quan hệ từ","Trợ từ"],1,"“ơi” là thán từ dùng để gọi đáp."],
+["VĂN","Nghị luận có lý lẽ tốt nhưng thiếu dẫn chứng dễ thiếu?",["Màu sắc","Sức thuyết phục","Nhan đề","Số chữ"],1,"Dẫn chứng giúp cụ thể hóa và tăng sức thuyết phục."],
+["VĂN","Nhan đề hay có chắc chắn làm bài viết hay không?",["Có","Không","Chỉ khi dài","Chỉ khi nhiều Hán Việt"],1,"Nhan đề chỉ là một yếu tố."],
+["VĂN","“Mưa rơi, mưa rơi, mưa rơi...” nổi bật?",["Điệp ngữ","Nói quá","Hoán dụ","Chơi chữ"],0,"Cụm từ được lặp lại để nhấn mạnh và tạo nhịp."],
+["VĂN","Chủ đề của bài thơ gần nhất với?",["Tên tác giả","Vấn đề/tư tưởng trung tâm","Số dòng","Nhà xuất bản"],1,"Chủ đề khái quát vấn đề và tư tưởng trung tâm."],
+["VĂN","Thấy từ “như” là chắc chắn có so sánh?",["Chắc chắn","Không chắc","Luôn ẩn dụ","Luôn hoán dụ"],1,"Phải xét ngữ cảnh và quan hệ ý nghĩa."],
+["VĂN","Dẫn chứng tốt nên?",["Càng dài càng tốt","Tiêu biểu, phù hợp luận điểm","Càng nổi tiếng càng tốt dù lệch","Không cần giải thích"],1,"Dẫn chứng phải phù hợp và được phân tích/liên hệ."],
+["VĂN","Kết bài tốt thường?",["Mở 5 luận điểm mới","Khái quát/khẳng định vấn đề","Chép thân bài","Đổi chủ đề"],1,"Kết bài khép lại và tạo dư âm hợp lý."],
+["ANH","Choose the correct sentence.",["She don't like math.","She doesn't likes math.","She doesn't like math.","She not like math."],2,"Sau doesn't, động từ chính dùng nguyên mẫu."],
+["ANH","Which word is a noun?",["beautiful","beauty","beautifully","beautify"],1,"beauty là danh từ."],
+["ANH","If I ___ enough time, I would join the club.",["have","had","will have","am having"],1,"Điều kiện loại 2: If + past simple."],
+["ANH","She has lived here ___ 2020.",["for","since","from","during"],1,"Since + mốc thời gian."],
+["ANH","“I have finished my homework yesterday.” Sai ở đâu?",["I","have finished","my homework","yesterday"],1,"Present perfect không đi với mốc quá khứ xác định như yesterday."],
+["ANH","Closest meaning of “generous”?",["willing to give/share","very angry","unable to speak","extremely small"],0,"Generous = hào phóng."],
+["ANH","The book ___ by millions of students every year.",["reads","is read","is reading","read"],1,"Bị động hiện tại đơn: is + V3."],
+["ANH","Which sentence is correct?",["He is good in Math.","He is good at Math.","He good at Math.","He is well at Math."],1,"Cụm đúng: be good at."],
+["ANH","Although it was raining, we went out. Although diễn tả?",["Nguyên nhân","Tương phản","Kết quả","Mục đích"],1,"Although = mặc dù ⇒ tương phản."],
+["ANH","Best response: “Would you mind opening the window?”",["Yes, I would mind.","No, not at all.","I am opening yesterday.","Never mind the window."],1,"“No, not at all.” là cách đáp lịch sự khi đồng ý."]
 ];
-let qi=0,score=0,answered=false;
-const qText=document.getElementById("qText"),answers=document.getElementById("answers"),qCount=document.getElementById("qCount"),qSubject=document.getElementById("qSubject"),qTag=document.getElementById("qTag"),qScore=document.getElementById("qScore"),progress=document.getElementById("progress"),explain=document.getElementById("explain"),result=document.getElementById("result");
-function renderQ(){let q=qs[qi];answered=false; qCount.textContent=`Câu ${qi+1} / ${qs.length}`;qSubject.textContent=q[0];qTag.textContent=q[0]+" · "+q[1];qText.textContent=q[2];explain.textContent="";qScore.textContent=score+" điểm";progress.style.width=((qi)/qs.length*100)+"%";answers.innerHTML=q[3].map((a,i)=>`<button class="ans" onclick="answer(${i})">${String.fromCharCode(65+i)}. ${a}</button>`).join("")}
-function answer(i){if(answered)return;answered=true;let q=qs[qi],btns=[...document.querySelectorAll(".ans")];btns[q[4]].classList.add("correct");if(i===q[4]){score++;explain.textContent="✅ Chính xác! "+q[5]}else{btns[i].classList.add("wrong");explain.textContent="❌ Chưa đúng. "+q[5]}qScore.textContent=score+" điểm";setTimeout(()=>{qi++;if(qi<qs.length)renderQ();else finish()},900)}
-function finish(){progress.style.width="100%";qText.textContent="🎓 HOÀN THÀNH KHẢO THÍ";answers.innerHTML="";let pct=score/qs.length;if(pct>=.9){result.classList.add("show");document.getElementById("finalTitle").textContent="Hạng S — Não bộ đang chạy turbo.";document.getElementById("finalText").textContent="Bạn đạt mức xuất sắc. Hội đồng khảo thí nghi ngờ bạn đã ăn đề cương thay cơm."}else if(pct>=.7){result.classList.add("show");document.getElementById("finalTitle").textContent="Hạng A — Rất ổn.";document.getElementById("finalText").textContent="Nền tảng tốt. Chỉ cần luyện thêm để đề khó không làm bạn nhìn trần nhà."}else if(pct>=.5){result.classList.add("show");document.getElementById("finalTitle").textContent="Hạng B — Có tiềm năng.";document.getElementById("finalText").textContent="Bạn biết khá nhiều, nhưng đôi lúc kiến thức đi nghỉ phép."}else{result.classList.add("show");document.getElementById("finalTitle").textContent="Hạng C — Cần cứu trợ.";document.getElementById("finalText").textContent="Không sao. Đây là kiểm tra đầu vào, không phải phán quyết cuộc đời."}document.getElementById("finalScore").textContent=score+"/"+qs.length}
-document.getElementById("resetQuiz").onclick=()=>{qi=0;score=0;result.classList.remove("show");renderQ()};renderQ();
-
-document.querySelectorAll(".filter button").forEach(b=>b.onclick=()=>{document.querySelectorAll(".filter button").forEach(x=>x.classList.remove("active"));b.classList.add("active");let f=b.dataset.filter;document.querySelectorAll("#rankBody tr").forEach(r=>r.style.display=f==="all"||r.dataset.sub===f?"":"none")});
-document.getElementById("registerForm").addEventListener("submit",e=>{e.preventDefault();let n=document.getElementById("regName").value,s=document.getElementById("regSubject").value;let t=document.getElementById("toast");t.textContent="🟢 "+n+" đã đăng ký "+s+" (mô phỏng)";t.classList.add("show");setTimeout(()=>t.classList.remove("show"),3500);e.target.reset()});
+let qi=0,score=0,locked=false;
+const $=x=>document.getElementById(x);
+function renderQ(){
+ locked=false;const q=Q[qi];
+ $("qc").textContent=`Câu ${qi+1} / 30`;$("qs").textContent=q[0];$("qt").textContent=q[0];
+ $("qq").textContent=q[1];$("sc").textContent=`${score} điểm`;$("pr").style.width=(qi/30*100)+"%";$("ex").textContent="";
+ $("aa").innerHTML=q[2].map((a,i)=>`<button class="ans" onclick="answer(${i})">${String.fromCharCode(65+i)}. ${a}</button>`).join("");
+}
+function answer(i){
+ if(locked)return;locked=true;const q=Q[qi],bs=[...document.querySelectorAll(".ans")];
+ bs[q[3]].classList.add("correct");
+ if(i===q[3]){score++;toast("🎯 Đúng! Não vừa né được một cái bẫy.");}
+ else{bs[i].classList.add("wrong");toast("💀 Dính bẫy. Đọc đề chậm hơn!");}
+ $("sc").textContent=`${score} điểm`;$("ex").textContent="💡 "+q[4];
+ setTimeout(()=>{if(qi<29){qi++;renderQ()}else finish()},850);
+}
+function finish(){
+ $("pr").style.width="100%";$("aa").innerHTML="";$("qq").textContent="ĐÃ HOÀN THÀNH 30 CÂU.";
+ $("res").classList.add("show");$("bs").textContent=`${score}/30`;
+ let t,m;if(score>=27){t="👑 S-RANK — ĐỀ KHÓ MÀ VẪN SỐNG.";m="Hệ thống tạm thời không dám cà khịa."}
+ else if(score>=23){t="🔥 A-RANK — NÃO HOẠT ĐỘNG TỐT.";m="Có dính trap nhưng tổng thể rất mạnh."}
+ else if(score>=18){t="⚡ B-RANK — CÓ TIỀM NĂNG.";m="Kiến thức ổn, câu mẹo còn gây sát thương."}
+ else{t="🫠 C-RANK — ĐỀ ĐÃ THẮNG.";m="Không sao. Đọc kỹ từng chữ và chiến lại."}
+ $("rt").textContent=t;$("rx").textContent=m;
+}
+$("reset").onclick=()=>{qi=0;score=0;$("res").classList.remove("show");renderQ()};
+function toast(t){const x=$("toast");x.textContent=t;x.classList.add("show");setTimeout(()=>x.classList.remove("show"),1600)}
+function openView(id){$("main").style.display="none";$("views").style.display="block";document.querySelectorAll(".view").forEach(v=>v.classList.remove("active"));$(id).classList.add("active");scrollTo(0,0)}
+function closeView(){$("views").style.display="none";$("main").style.display="block";scrollTo(0,0)}
+function scan(){$("scanOut").textContent="SCAN 100% — Core OK · Quiz 30Q OK · Profiles OK · Badges OK · Homework Police OK · 🚨 MIM Trịnh vẫn đang bị hệ thống nhắc BTVN.";toast("SYSTEM SCAN COMPLETE")}
+renderQ();
 </script>
 </body>
 </html>
